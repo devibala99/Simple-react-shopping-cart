@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgba(255, 255, 255, 0.742);
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+header {
+    display: flex;
+    background-color: rgb(1, 36, 81);
+    color: rgba(241, 244, 237, 0.911);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+}
+
+header h1 {
+    padding: 0 2em;
+    cursor: pointer;
+}
+
+header section {
+    padding: 0 2.5em;
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgba(241, 244, 237, 0.911);
+   
+}
+
+header section button {
+    border: none;
+    padding: 0 1.5em;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: rgba(241, 244, 237, 0.911);
+}   
+
+.wishlist:hover {
+    color: lightcoral;
+}
+.itemInCart:hover {
+    color: rgba(131, 255, 131, 0.853);
+}
+.cartClass, .itemInCart{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.23em;
+}
+
+/* product in a container */
+.body{
+    overflow-x: hidden;
+    background-color: rgba(242, 242, 242, 0.742);
+}
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding: 0 1em; padding-top: 2em;
+    overflow-x: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+.products{
+    box-shadow: rgb(206, 208, 203) 1.95px 1.95px 2.6px;
+    padding: 1em 0 0.5em 1em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.products:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.productCard{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    gap: 35px;
+}
+
+.productCard section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #2d2d2d;
+}
+.productCard section h2, .productCard section p{
+    margin: 0;
+    padding: 0;
+}
+.productBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    width: 180px;
+    font-size: 1.2em;
+    background-color: rgba(252, 248, 3, 0.742);
+    color: #2d2d2d;
+    cursor: pointer;
+}
+.btnAdd{
+    width: 75%;
+    border: none;
+    background-color: transparent;
+    font-size: .8em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btnWish{
+    width: 25%;
+    margin-left: 20px;
+    font-size: 1.2em;
+    border-left: 1px solid rgb(209, 206, 3);
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    background-color: transparent;
+    color: rgba(195, 197, 104, 0.649);
+    padding-top: 3px;
+    cursor: pointer;
+}
+.btnWish:hover, .btnWish:focus{
+    color: lightcoral;
+}
+
+.sp span{
+    font-size: 16px;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+#card{
+    width: 100%;
+    border: 2px solid green;
+}
